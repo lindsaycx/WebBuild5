@@ -152,11 +152,6 @@
     font-family: Verdana, sans-serif;
 }
 
-.fa-solid.fa-display{
-    padding-left: 15px;
-    padding-bottom: 5px;
-}
-
 #p-grid #s-links {
     grid-area: links;
     margin-top: 5px;
@@ -174,6 +169,11 @@
 
 .fa-brands.fa-linkedin{
     padding: 27px;
+}
+
+.fa-solid.fa-display{
+    padding-left: 15px;
+    padding-bottom: 5px;
 }
 
 a:visited {
