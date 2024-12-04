@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DynaPuff:wght@400..700&family=Share+Tech&family=Signika+Negative:wght@300..700&display=swap');
+
+.g-body {
+    font-size: 16px;
+    background-color: #fc8eac;
+}
+
+.g-heading {
+    grid-area: header;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+    color: #702963;
+    font-family: "DynaPuff", Verdana, sans-serif;
+}
+
+.g-options2{
+    grid-area: options2;
+    border-top: 2px solid #ffbcd9;
+    border-bottom: 2px solid #ffbcd9;
+    font-size: 25px;
+    color: #702963;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "DynaPuff", Verdana, sans-serif;
+    
+}
+
+.g-links2{
+    grid-area: links2;
+    font-size: 45px;
+    padding-left: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.g-desc1{
+    grid-area: desc1;
+    border: 2px solid #702963;
+    padding: 15px;
+    background-color: #ffbcd9;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    color: #702963;
+}
+
+.g-desc2{
+    grid-area: desc2;
+    border: 2px solid #702963;
+    padding: 15px;
+    background-color: #ffbcd9;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    color: #702963;
+}
+
+.g-webhead{
+    grid-area: webhead;
+    border: 2px solid #702963;
+    padding: 10px;
+    background-color: #ffbcd9;
+    font-size: 50px;
+    color: #702963;
+    align-content: center;
+    text-align: center;
+    font-family: "DynaPuff", Verdana, sans-serif;
+}
+
+/* ----------home page styling--------------- */
+
+#p-grid {
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr;
+    grid-template-areas:
+        "header intro hacker"
+        "options intro hacker"
+        "options workxp workxp"
+        "links workxp workxp";
+    width: 100%;
+    height: 97vh;
+
+}
+
+#p-grid #s-intro {
+    grid-area: intro;
+    background-color: #ffbcd9 ;
+}
+
+#p-grid #s-workxp {
+    grid-area: workxp;
+    background-color: #ffbcd9;
+    border-top: 2px dashed #702963;
+    padding: 30px;
+}
+
+#p-grid #s-hacker{
+    grid-area: hacker;
+    padding-top: 25px;
+    background-color: #ffbcd9;
+    padding-right: 25px;
+}
+
+#p-grid #s-options{
+    grid-area: options;
+    border-top: 2px solid #ffbcd9;
+    border-bottom: 2px solid #ffbcd9;
+    font-size: 25px;
+    color: #702963;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+    font-family: "DynaPuff", Verdana, sans-serif;
+}
+
+#p-grid #s-intro .H{
+    font-size: 30px;
+    color: #702963;
+    text-align: center;
+    padding-top: 20px;
+    font-family: "DynaPuff", Verdana, sans-serif;
+}
+
+#p-grid #s-intro .L{
+    font-size: 20px;
+    color: #702963;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    font-family: Verdana, sans-serif;
+}
+
+#p-grid #s-workxp .G{
+    font-size: 30px;
+    color: #702963;
+    padding-left: 255px;
+    font-family: "DynaPuff", Verdana, sans-serif;
+}
+
+#p-grid #s-workxp .K{
+    font-size: 20px;
+    color: #702963;
+    padding: 20px;
+    font-family: Verdana, sans-serif;
+}
+
+.fa-solid.fa-display{
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+#p-grid #s-links {
+    grid-area: links;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-solid.fa-envelope{
+    padding: 27px;
+}
+
+.fa-brands.fa-linkedin{
+    padding: 27px;
+}
+
+a:visited {
+    color: #0000ee;
+  }
+
+/* ------------resume styling----------------- */
+
+#p-grid2{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+
+        "header edu"
+        "options2 profile"
+        "options2 work"
+        "links2 work";
+
+    width: 100%;
+    height: 97vh;
+    gap: 10px;
+}
+
+#p-grid2 #s-work{
+    grid-area: work;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #ffbcd9;
+    font-size: 30px;
+    text-align: center;
+    color: #702963;
+    margin-right: 5px;
+    font-family: "DynaPuff", Verdana, sans-serif;
+}
+
+#p-grid2 #s-edu {
+    grid-area: edu;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #ffbcd9;
+    text-align: center;
+    font-size: 33px;
+    color: #702963;
+    margin-right: 5px;
+    font-family: "DynaPuff", Verdana, sans-serif;
+}
+
+#p-grid2 #s-profile{
+    grid-area: profile;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #ffbcd9;
+    font-size: 30px;
+    text-align: center;
+    color: #702963;
+    margin-right: 5px;
+    font-family: "DynaPuff", Verdana, sans-serif;
+}
+
+#p-grid2 #s-subedu{
+    font-size: 20px;
+    padding-top: 15px;
+    color: #702963;
+    font-family: Verdana, sans-serif;
+}
+
+#p-grid2 #s-subprofile{
+    padding: 15px;
+    font-size: 18px;
+    color: #702963;
+    font-family: Verdana, sans-serif;
+}
+
+#p-grid2 #s-subwork{
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    font-family: Verdana, sans-serif;
+}
+
+/* ----------- samples styling-------------- */
+
+#p-grid3{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-template-rows: 0.5fr 0.5fr 1.5fr 0.5fr;
+    grid-template-areas:
+
+        "header webhead webhead"
+        "options2 desc1 desc2"
+        "options2 pictures pictures"
+        "links2 pictures pictures";
+
+        width: 100%;
+        height: 97vh;
+        gap: 10px;
+}
+
+#p-grid3 #s-pictures{
+    grid-area: pictures;
+    border: 2px solid #702963;
+    padding: 10px;
+    background-color: #ffbcd9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#p-grid3 #s-Back{
+    padding: 20px;
+}
+
+#p-grid3 #s-Next{
+    padding:20px;
+}
+
+@media screen and (max-width: 1359px){
+    
+    .g-options2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; 
+        align-items: center;
+
+    }
+
+    .g-links2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+    }
+
+    .g-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-evenly;
+    }
+
+    #p-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "options"
+            "links"
+            "intro"
+            "workxp";
+        gap: 10px; 
+    }
+
+    #p-grid #s-workxp {
+        border-color: #ffbcd9;
+    }
+
+    #p-grid #s-hacker {
+        display: none;
+        background-color: #fc8eac;
+    }
+
+    #p-grid #s-workxp .G{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .fa-solid.fa-display{
+        padding-left: 15px;
+        padding-bottom: 5px;
+    }
+    
+    #p-grid #s-options{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; 
+        align-items: center;
+    
+    
+        font-family: "DynaPuff", Verdana, sans-serif;
+    }
+    
+    
+    #p-grid #s-links {
+        grid-area: links;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .fa-solid.fa-envelope{
+        padding: 27px;
+    }
+    
+    .fa-brands.fa-linkedin{
+        padding: 27px;
+    }
+
+    #p-grid2{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+
+            "header"
+            "options2"
+            "links2"
+            "edu"
+            "profile"
+            "work";
+
+        gap: 10px;
+    }
+
+    #p-grid3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto; 
+        grid-template-areas:
+            "header header"
+            "options2 options2"
+            "links2 links2"
+            "webhead webhead"
+            "desc1 desc2" 
+            "pictures pictures"; 
+        gap: 10px;
+        height: 100vh; 
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .g-heading{
+        font-size: 30px;
+    }
+
+    .g-options2{
+        font-size: 17px;
+    }
+
+    #p-grid #s-options{
+        font-size: 17px;
+    }
+
+    #p-grid #s-links{
+        font-size: 35px;
+    }
+
+    #p-grid #s-intro .H{
+        font-size: 25px;
+    }
+
+    #p-grid #s-intro .L{
+        font-size: 15px;
+    }
+
+    #p-grid #s-workxp .G{
+        font-size: 25px;
+        padding:0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #p-grid #s-workxp .K{
+        font-size: 15px;
+    }
+
+    #p-grid2 #s-edu{
+        font-size: 25px;
+    }
+
+    #p-grid2 #s-subedu{
+        font-size: 15px;
+    }
+
+    #p-grid2 #s-profile{
+        font-size: 24px;
+    }
+
+    #p-grid2 #s-subprofile{
+        font-size: 15px;
+    }
+
+    #p-grid2 #s-work{
+        font-size: 24px;
+    }
+    
+    #p-grid2 #s-subwork{
+        font-size: 15px;
+    }
+    
+    #p-grid3 {
+        display: grid;
+        grid-template-columns: auto; 
+        grid-template-rows: auto; 
+        grid-template-areas:
+
+            "header"
+            "options2"
+            "links2"
+            "webhead"
+            "desc1"
+            "pictures"
+            "desc2";
+
+        gap: 10px;
+    }
+
+    #p-grid3 #s-pictures{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    
+
+    .g-options2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+
+    #p-grid #s-options{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+
+
+    
+}
+
