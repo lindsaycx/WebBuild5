@@ -3,17 +3,19 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - main
+      - main 
+      #pushing to main triggers this 
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    #git hub spins a temporary ubuntu server
+    
     steps:
       - name: Deploy via SSH
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@master #connects to ec2 using ssh github actions 
         with:
-          host: ${{ secrets.EC2_HOST }}
+          host: ${{ secrets.EC2_HOST }} #my credentials from github secrets
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
@@ -21,3 +23,5 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             sudo systemctl reload apache2
+    
+    #goes to target directory, fetches the commit, replaces files with the latest version from GitHub, restart
